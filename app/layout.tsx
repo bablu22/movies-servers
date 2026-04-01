@@ -48,14 +48,6 @@ export const metadata: Metadata = {
     description:
       "Find and monitor 251+ streaming websites with live status, smart search, and quick previews.",
     locale: "en_US",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "StreamVault movie streaming directory",
-      },
-    ],
   },
   robots: {
     index: true,
