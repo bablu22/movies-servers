@@ -10,7 +10,9 @@ const geist = Geist({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000")
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000")
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -54,14 +56,6 @@ export const metadata: Metadata = {
         alt: "StreamVault movie streaming directory",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "StreamVault - Movie Streaming Services Directory",
-    description:
-      "Discover streaming sites with live uptime checks, filters, and previews.",
-    images: ["/twitter-image"],
-    creator: "@bablu22",
   },
   robots: {
     index: true,
